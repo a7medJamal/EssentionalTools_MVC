@@ -16,6 +16,7 @@ namespace EssenttionalTools_MVC.Models
         public LinqValueCalculator(IDiscountHelper discountParam)
         {
             this.discounter = discountParam;
+
             Debug.WriteLine(string.Format("instance {0} Creater",++counter));
         }
         public decimal ValueProducts(IEnumerable<Product> products)
