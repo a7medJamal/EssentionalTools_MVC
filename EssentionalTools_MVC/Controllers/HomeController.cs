@@ -10,7 +10,7 @@ namespace EssentionalTools_MVC.Controllers
     public class HomeController : Controller
     {
         private IValueCalculator calc;
-        public HomeController( IValueCalculator calcParam)
+        public HomeController( IValueCalculator calcParam,IValueCalculator calcParam2)
         {
             calc = calcParam;
         }
