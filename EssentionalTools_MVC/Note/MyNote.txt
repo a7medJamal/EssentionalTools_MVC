@@ -1,0 +1,10 @@
+﻿
+// install all this pakedges in your app 
+
+install-package ninject -version 3.0.1.10
+
+install-package ninject.web.common -version 3.0.0.7
+
+install-package ninject.mvc3 -version 3.0.0.6
+
+Install-Package Microsoft.AspNet.Mvc
