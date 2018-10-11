@@ -1,4 +1,5 @@
-﻿using EssenttionalTools_MVC.Models;
+﻿using EssentionalTools_MVC.Models;
+using EssenttionalTools_MVC.Models;
 using Ninject;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace EssentionalTools_MVC.Infrastructure
         private void AddBindings()
         {
             kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
+            kernel.Bind<IDiscountHelper>().To<DefaultDiscountHelper>();
         }
 
         public object GetService(Type serviceType)
