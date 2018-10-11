@@ -11,9 +11,10 @@ namespace EssentionalTools_MVC.Models
     }
     public class DefaultDiscountHelper : IDiscountHelper 
     {
+        public decimal DiscountSize { get; set; }
         public decimal ApplyDiscount(decimal totalParam)
         {
-            return totalParam - (15m/100 * totalParam);
+            return totalParam - (DiscountSize / 100m * totalParam);
         }
     }
 }
