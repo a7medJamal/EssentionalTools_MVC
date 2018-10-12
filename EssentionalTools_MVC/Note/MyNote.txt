@@ -7,4 +7,9 @@ install-package ninject.web.common -version 3.0.0.7
 
 install-package ninject.mvc3 -version 3.0.0.6
 
+
+install-package moq -version 4.1.1309.1617 -projectname EssentionalTools_MVC
+
+
+
 Install-Package Microsoft.AspNet.Mvc
